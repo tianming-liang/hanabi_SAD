@@ -56,32 +56,6 @@ This repo contains code and models for
 and [Simplified Action Decoder for Deep Multi-Agent
 Reinforcement Learning](https://arxiv.org/abs/1912.02288).
 
-To reference these works, please use:
-
-Other-Play
-```
-@incollection{icml2020_5369,
- author = {Hu, Hengyuan and Peysakhovich, Alexander and Lerer, Adam and Foerster, Jakob},
- booktitle = {Proceedings of Machine Learning and Systems 2020},
- pages = {9396--9407},
- title = {\textquotedblleft Other-Play\textquotedblright  for Zero-Shot Coordination},
- year = {2020}
-}
-
-```
-
-Simplfied Action Decoder
-```
-@inproceedings{
-Hu2020Simplified,
-title={Simplified Action Decoder for Deep Multi-Agent Reinforcement Learning},
-author={Hengyuan Hu and Jakob N Foerster},
-booktitle={International Conference on Learning Representations},
-year={2020},
-url={https://openreview.net/forum?id=B1xm3RVtwB}
-}
-```
-
 ## Compile
 We have been using `pytorch-1.5.1`, `cuda-10.1`, and `cudnn-v7.6.5` in our development environment.
 Other settings may also work but we have not tested it extensively under different configurations.
@@ -159,7 +133,7 @@ sh download.sh
 To evaluate a model, simply run
 ```bash
 cd pyhanabi
-python tools/eval_model.py --weight ../models/sad_2p_10.pthw --num_player 2
+python tools/eval_model.py --weight ../models/sad_models/sad_2p_10.pthw --num_player 2
 ```
 
 ## Related Repos
